@@ -12,7 +12,14 @@
     <style>
         main {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        main > h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
         }
 
         main div {
@@ -32,12 +39,26 @@
             flex: 1;
         }
 
+        
         .flex-hoyre {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
+        
+        .flex-hoyre > *{
+            flex: 1;
+        }
 
+        .hoyre-topp h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .hoyre-topp p {
+            font-size: 30px;
+        }
+        
         .hoyre-bunn {
             display: flex;
             flex-direction: row;
@@ -68,13 +89,15 @@
 
     <!-- MAIN -->
     <main>
+        <h1>Dette er en side hvor du kan lese litt om meg</h1>
         <section class="flex">
             <div class="flex-venstre">
-                Venstre
+                <img src="bilder/Image (1).jpg" alt="Bilde av meg">
             </div>
             <div class="flex-hoyre">
                 <div class="hoyre-topp">
-                    Høyre topp
+                    <h2>Hei, dette er meg!</h2>
+                    <p>Jeg heter Simen og jeg er 17 år gammel. </p>
                 </div>
                 <div class="hoyre-bunn">
                     <div class="bunn-venstre">
