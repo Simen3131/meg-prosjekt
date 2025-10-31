@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         main {
             display: flex;
@@ -16,14 +19,10 @@
             gap: 20px;
         }
 
-        main > h1 {
+        main>h1 {
             text-align: center;
             margin-top: 20px;
             font-size: 50px;
-        }
-
-        main div {
-            border: 2px solid black;
         }
 
         .flex {
@@ -32,41 +31,103 @@
             gap: 10px;
 
             margin: 10px auto;
-            width: 95%;
+            width: 83%;
         }
 
-        .flex > * {
+        .flex-venstre img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex>* {
             flex: 1;
         }
 
-        
+
         .flex-hoyre {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-        
-        .flex-hoyre > *{
+
+        .flex-hoyre>* {
             flex: 1;
+        }
+
+        .hoyre-topp {
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 10px;
         }
 
         .hoyre-topp h2 {
             font-size: 40px;
-            text-align: center;
+            padding: 10px;
         }
 
         .hoyre-topp p {
             font-size: 30px;
+            padding: 10px;
         }
-        
+
         .hoyre-bunn {
             display: flex;
             flex-direction: row;
             gap: 10px;
         }
 
-        .hoyre-bunn > * {
+        .hoyre-bunn>* {
             flex: 1;
+            background-color: dodgerblue;
+        }
+
+        .bunn-venstre {
+            border-radius: 10px;
+        }
+
+        .bunn-hoyre {
+            border-radius: 10px;
+        }
+
+        .bunn-venstre p {
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 300px 300px;
+            gap: 20px;
+        }
+
+        .meg {
+            grid-column: 2 / 7;
+        }
+
+        .meg-img {
+            grid-column: 7 / 12;
+        }
+
+        .meg-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nadderud-img {
+            grid-column: 2 / 7;
+            grid-row: 2 / 3;
+        }
+
+        .nadderud-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nadderud-info {
+            grid-column: 7 / 12;
+            grid-row: 2 / 3;
         }
     </style>
 </head>
@@ -97,11 +158,15 @@
             <div class="flex-hoyre">
                 <div class="hoyre-topp">
                     <h2>Hei, dette er meg!</h2>
-                    <p>Jeg heter Simen og jeg er 17 år gammel. </p>
+                    <p>Jeg heter Simen og jeg er 17 år gammel. Jeg bor i et hvitt hus på Jar, sammen med familien min.
+                        Under kan du lese litt mer om familien min og hva noen av interessene mine er. Favorittfagene
+                        mine er IT, Gym og Matte.</p>
                 </div>
                 <div class="hoyre-bunn">
                     <div class="bunn-venstre">
-                        Bunn venstre
+                        <p>Jeg har fire andre familiemedlemmer. Moren min heter Elisabeth og faren min heter Andreas.
+                            Jeg har en lillebror som heter Marius, han er 15 år gammel. Vi har også en hund som heter
+                            Luna som er 4 år gammel.</p>
                     </div>
                     <div class="bunn-hoyre">
                         Bunn høyre
@@ -114,12 +179,12 @@
 
             </div>
             <div class="meg-img">
-
-            </div>
-            <div class="nadderud-info">
-
+                <img src="bilder/bilde.png" alt="Hagaliveien 5A">
             </div>
             <div class="nadderud-img">
+                <img src="bilder/Nadderud vgs 4.jpg" alt="Nadderud Videregående skole">
+            </div>
+            <div class="nadderud-info">
 
             </div>
         </section>

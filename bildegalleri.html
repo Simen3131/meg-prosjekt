@@ -9,6 +9,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 15px;
+        }
+
+        .wrapper>div {
+            gap: 15px;
+        }
+
+        .bilde {
+            background-color: lightblue;
+            width: 100px;
+            height: 300px;
+        }
+
+        .bilde-a {
+            display: flex;
+        }
+
+        .bilde-a :first-child {
+            flex: 2;
+        }
+
+        .bilde-a :last-child {
+            flex: 1;
+        }
+
+        .bilde-b {
+            display: flex;
+        }
+
+        .bilde-b .bilde {
+            flex: 1;
+        }
+
+        .bilde-b :nth-child(2) {
+            flex: 2;
+        }
+
+        .bilde-c {
+            display: flex;
+        }
+
+        .bilde-c .bilde {
+            flex: 1;
+        }
+
+        .bilde-d {
+            display: flex;
+        }
+
+        .bilde-d .bilde {
+            flex: 1;
+        }
+
+        .bilde {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bilde1 {
+            background-image: url(bilder/Image\ \(3\).jpg);
+        }
+
+        .bilde2 {
+            background-image: url(bilder/Image\ \(4\).jpg);
+        }
+
+        .bilde3 {
+            background-image: url(bilder/Image\ \(5\).jpg);
+            background-position: top;
+        }
+
+        .bilde4 {
+            background-image: url(bilder/Image\ \(8\).jpg);
+        }
+
+        .bilde5 {
+            background-image: url(bilder/Image\ \(10\).jpg)
+        }
+
+        .bilde6 {
+            background-image: url(bilder/Image\ \(9\).jpg);
+        }
+
+        .bilde7 {
+            background-image: url(bilder/Image\ \(2\).jpg);
+        }
+
+        .bilde8 {
+            background-image: url(bilder/Image\ \(1\).jpg);
+        }
+
+        .bilde9 {
+            background-image: url(bilder/Image\ \(6\).jpg);
+            background-position: center;
+        }
+
+        .bilde10 {
+            background-image: url(bilder/Image\ \(7\).jpg);
+        }
+
+        @media(width < 420px) {
+            .bilde {
+                height: 100px;
+            }
+
+            .wrapper {
+                gap: 7px;
+                margin: 7px 7px;
+            }
+
+            .wrapper>div {
+                gap: 7px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,8 +152,26 @@
 
     <!-- MAIN -->
     <main>
-        <section>Grid</section>
-        <section>Flex</section>
+        <div class="wrapper">
+            <div class="bilde-a">
+                <div class="bilde bilde1"></div>
+                <div class="bilde bilde2"></div>
+            </div>
+            <div class="bilde-b">
+                <div class="bilde bilde3"></div>
+                <div class="bilde bilde4"></div>
+                <div class="bilde bilde5"></div>
+            </div>
+            <div class="bilde-c">
+                <div class="bilde bilde6"></div>
+                <div class="bilde bilde7"></div>
+            </div>
+            <div class="bilde-d">
+                <div class="bilde bilde8"></div>
+                <div class="bilde bilde9"></div>
+                <div class="bilde bilde10"></div>
+            </div>
+        </div>
     </main>
     <!-- MAIN -->
 
