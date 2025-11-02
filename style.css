@@ -107,10 +107,6 @@ footer {
     flex: 1 1 0;
 }
 
-footer div {
-    /* border: 1px solid black; */
-}
-
 .b1-venstre {
     display: flex;
     justify-content: center;
