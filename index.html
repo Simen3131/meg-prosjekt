@@ -19,12 +19,6 @@
             gap: 20px;
         }
 
-        main>h1 {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 50px;
-        }
-
         .flex {
             display: flex;
             flex-direction: row;
@@ -61,12 +55,12 @@
         }
 
         .hoyre-topp h2 {
-            font-size: 40px;
+            font-size: clamp(10px, 4vw, 40px);
             padding: 10px;
         }
 
         .hoyre-topp p {
-            font-size: 30px;
+            font-size: clamp(10px, 3vw, 20px);
             padding: 10px;
         }
 
@@ -89,9 +83,9 @@
             border-radius: 10px;
         }
 
-        .bunn-venstre p {
+        .bunn-venstre, .bunn-hoyre p {
             text-align: center;
-            font-size: 20px;
+            font-size: clamp(10px, 3vw, 20px);
             padding: 10px;
         }
 
@@ -104,6 +98,10 @@
 
         .meg {
             grid-column: 2 / 7;
+            background-color: dodgerblue;
+            font-size: clamp(10px, 2vw, 30px);
+            padding: 10px;
+            text-align: center;
         }
 
         .meg-img {
@@ -128,6 +126,21 @@
         .nadderud-info {
             grid-column: 7 / 12;
             grid-row: 2 / 3;
+            background-color: dodgerblue;
+            font-size: clamp(10px, 2vw, 30px);
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media(width < 700px) {
+            .flex {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-rows: 150px 150px;
+            }
+
         }
     </style>
 </head>
@@ -150,7 +163,10 @@
 
     <!-- MAIN -->
     <main>
-        <h1>Dette er en side hvor du kan lese litt om meg</h1>
+        <div class="intro">
+            <h1>Hjemmeside</h1>
+            <p>Dette er en side hvor du kan lese litt om meg og livet mitt.</p>
+        </div>
         <section class="flex">
             <div class="flex-venstre">
                 <img src="bilder/Image (1).jpg" alt="Bilde av meg">
@@ -169,14 +185,14 @@
                             Luna som er 4 år gammel.</p>
                     </div>
                     <div class="bunn-hoyre">
-                        Bunn høyre
+                        <p>Jeg begynte på Nadderud Vgs skoleåret 2024/2025, og går nå i 2. klasse på videregående skole. På Nadderud trives jeg veldig godt og har fått mange nye venner fra min egen, og andre klasser.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="grid">
             <div class="meg">
-
+                <p>Dette er huset mitt. Det ligger bare 10 minutter unna Jar t-banestasjon, og nærmeste busstopp ligger 2 minutter unna og heter Lindebergveien. Derfra kan du ta bussen til Bekkestua eller Skøyen.</p>
             </div>
             <div class="meg-img">
                 <img src="bilder/bilde.png" alt="Hagaliveien 5A">
@@ -185,7 +201,7 @@
                 <img src="bilder/Nadderud vgs 4.jpg" alt="Nadderud Videregående skole">
             </div>
             <div class="nadderud-info">
-
+                <p>Nadderud Videregående Skole er en super skole. Den er moderne og fin, og har et bredt tilbud av valgfag. Jeg har Fysikk 1, Kjemi 1, IT 1, og Matte R1. Nadderud har mange veldig flinke lærere og er et hyggelig sted å være.</p>
             </div>
         </section>
     </main>

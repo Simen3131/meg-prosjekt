@@ -53,7 +53,7 @@ header {
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: clamp(15px, 5vw, 30px);
 }
 
 .nav a:hover {
@@ -65,6 +65,20 @@ header {
 
 main {
     flex-grow: 1;
+    margin-bottom: 100px;
+}
+
+.intro {
+    text-align: center;
+    margin: 50px;
+}
+
+.intro>h1 {
+    font-size: 75px;
+}
+
+.intro>p {
+    font-size: 20px;
 }
 
 footer {
@@ -139,4 +153,34 @@ footer div {
     .footer-b {
         margin: 0;
     }
+
+    .footer-b1 {
+        flex-direction: column;
+    }
+
+    .b1-hoyre>* {
+        justify-content: center;
+    }
+
+    .snap,
+    .insta,
+    .facebook,
+    .mobil,
+    .mail {
+        margin-left: 0px;
+    }
+
+    .intro>h1 {
+        font-size: 40px;
+    }
+
+    .intro>p {
+        font-size: 15px;
+    }
 }
+
+/* @media(width < 700px) {
+    .nav a {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+} */

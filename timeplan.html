@@ -84,6 +84,28 @@
             background-color: lightgray;
             width: 130px;
         }
+
+        @media(width < 700px) {
+            main * {
+                font-size: 5px;
+            }
+
+            table * {
+                padding: 2px;
+            }
+
+            table {
+                border: 2px solid black;
+            }
+
+            thead * {
+                border: 2px solid black;
+            }
+
+            td {
+                border: 1px solid black;
+            }
+        }
     </style>
 </head>
 
@@ -102,6 +124,10 @@
     <!-- HEADER -->
 
     <main>
+        <div class="intro">
+            <h1>Timeplan</h1>
+            <p>Dette er en oversikt over skoledagene mine på Nadderud Vgs i både partallsuker og oddetallsuker.</p>
+        </div>
         <table>
             <thead>
                 <tr>

@@ -18,6 +18,7 @@
         rel="stylesheet">
 
     <style>
+
         .flex {
             display: flex;
             flex-wrap: wrap;
@@ -28,7 +29,7 @@
         .card {
             display: flex;
             flex-direction: column;
-            width: 350px;
+            max-width: 350px;
             height: 300px;
         }
 
@@ -37,12 +38,35 @@
         }
 
         .card-img {
-            background-image: url(bilder/trening2.png);
             background-position: center;
             background-size: cover;
 
             border-radius: 10px;
             box-shadow: 0px -20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .trening {
+            background-image: url(bilder/trening2.png);
+        }
+
+        .basketball {
+            background-image: url(bilder/basketball.jpeg);
+        }
+
+        .matlaging {
+            background-image: url(bilder/matlaging.jpg);
+        }
+
+        .reising {
+            background-image: url(bilder/reising.jpg);
+        }
+
+        .spill {
+            background-image: url(bilder/spill.jpg);
+        }
+
+        .sosialisering {
+            background-image: url(bilder/sosial.jpg);
         }
 
         .card-info {
@@ -57,11 +81,25 @@
 
         .card-info > h2 {
             font-size: 35px;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .card-info > p {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 350;
         }
 
         .flex {
-            margin: 100px auto;
+            margin-top: 50px;
+            justify-content: center;
+            gap: 50px;
         }
+        
     </style>
 </head>
 
@@ -83,17 +121,60 @@
 
     <!-- MAIN -->
     <main>
+        <div class="intro">
+            <h1>Interesser</h1>
+            <p>Her kan du lese litt om hva som interesserer meg.</p>
+        </div>
         <section class="flex">
             <div class="card">
-                <div class="card-img">
+                <div class="card-img trening">
                 </div>
                 <div class="card-info">
                     <h2>Trening</h2>
-                    <p>Jeg elsker å trene</p>
+                    <p>Jeg elsker å trene. Det holder meg aktiv, noe som er viktig for både fysisk og mental helse.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img basketball">
+                </div>
+                <div class="card-info">
+                    <h2>Basketball</h2>
+                    <p>Jeg spiller basketball for EB-85. Det hjelper meg med å være aktiv jevnlig i hverdagen. Jeg trener med laget 3 ganger i uken, og vi spiller ofte kamp i helgene.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img matlaging">
+                </div>
+                <div class="card-info">
+                    <h2>Matlaging</h2>
+                    <p>Å spise god mat er noe av det beste jeg vet, derfor liker jeg også å lage mat og bake til meg selv og andre. Jeg liker å lage alt fra pannekaker til spaghetti carbonara.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img reising">
+                </div>
+                <div class="card-info">
+                    <h2>Reising</h2>
+                    <p>Jeg elsker å oppleve nye steder og kulturer, og det er alltid en god følelse når jeg vet jeg skal reise.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img spill">
+                </div>
+                <div class="card-info">
+                    <h2>Spill</h2>
+                    <p>Å spille videospill er noe jeg gjør når jeg ønsker å slappe av, eller for å ha det gøy, spesielt med venner. Det er noe av det beste jeg vet.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img sosialisering">
+                </div>
+                <div class="card-info">
+                    <h2>Sosialisering</h2>
+                    <p>Jeg elsker å være med venner og familie. Jeg elsker å snakke og å gjøre nye aktiviteter med dem. Disse personene har jeg det morsomt og hyggelig rundt.</p>
                 </div>
             </div>
         </section>
-        <section>Flex</section>
     </main>
     <!-- MAIN -->
 
